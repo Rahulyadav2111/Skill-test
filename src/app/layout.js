@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,7 +25,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+         <Header/> {/*for showing header at every page i import it in layout.js */}
+         <div className="flex h-screen">
+         <Sidebar/>{/*for showing header at every page i import it in layout.js */}
         {children}
+        </div>
       </body>
     </html>
   );
