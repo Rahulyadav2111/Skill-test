@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Home = () => {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen px-5 mx-auto'>
-      <h1 className='text-7xl font-bold mb-10 text-center'>WhatBytes</h1>
+      <h1 className='text-3xl font-bold mb-10 text-center'>WhatBytes</h1>
       <div className='flex flex-col sm:flex-row gap-4'>
         <Link href="/dashboard">
           <button className='px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-500 transition'>
